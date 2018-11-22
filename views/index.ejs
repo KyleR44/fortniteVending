@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+
+  <head>
+    <title>Vending</title>
+    <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="nav">
+        <ul>
+          <li><a href="/login" class="btn btn-default"><span class="fa fa-user"></span>Login</a></li>
+          <!-- <li><a href="/signup" class="btn btn-default"><span class="fa fa-user"></span>Signup</a></li> -->
+        </ul>
+      </div>
+      <div class="jumbotron text-center">
+        <h1>Vending Machine</h1>
+        <img src="img/greenVending.jpg" alt="">
+      </div>
+
+      <h2>Choose Your Power Up</h2>
+      <form action="/items" method="POST">
+        <ol>
+          <li>
+            <button type="button" id="bandages" name="button">1. Bandages - 100pts</button></li>
+          <li><button type="button" id="chugJug" name="button">2. Chug Jug - 215pts</button></li>
+          <li><button type="button" id="medKits" name="button">3. Med Kits - 500pts</button></li>
+          <li><button type="button" id="shieldPotion" name="button">4.Shield Potion - 250pts</button></li>
+          <li><button type="button" id="slurpJuice" name="button">5. Slurp Juice - 180pts</button></li
+        </ol>
+      </form>
+    </div>
+    <script src="main.js"></script>
+  </body>
+
+</html>

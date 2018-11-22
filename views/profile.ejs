@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+
+  <head>
+    <title>Vending</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div class="container">
+
+      <div class="page-header text-center">
+        <h1></span> Owner's Page</h1>
+        <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+      </div>
+
+        <div class="col-sm-6">
+          <h2>Items</h2>
+          <ul class="items">
+            <% for(var i=0; i<items.length; i++) {%>
+              <li class="message">
+                <span><%= items[i].name  %></span>
+                <span><%= items[i].num  %></span>
+                <span><%= items[i].count  %></span>
+                <span><%= items[i].revenue  %></span>
+              </li>
+              <% } %>
+          </ul>
+
+          <h3>Replenish Items</h3>
+          <form action="/items" method="POST">
+
+            <button id="restock"type="submit">Bandages</button>
+            <button id="restock"type="submit">Chug Lug</button>
+            <button id="restock"type="submit">Med Kits</button>
+            <button id="restock"type="submit">Sheild Potion</button>
+            <button id="restock"type="submit">Slurp Juice</button>
+          </form>
+        </div>
+
+      </div>
+
+  </body>
+
+</html>
